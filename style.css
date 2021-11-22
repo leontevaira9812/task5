@@ -1,0 +1,276 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  color: #1A1B22;
+  font-size: 18px;
+  line-height: 24px;  
+}
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+a{
+	text-decoration: none;  
+  color: inherit;
+}
+.header {
+  padding: 0;
+  background: #fff;
+  border-bottom: 1px solid #D1D2D6;
+  height: 80px;
+}
+.header-link {
+  color: #1A1B22;
+}
+
+.menu__btn {
+  width: 112px;
+  height: 48px;
+  border: 1px solid #1A1B22;
+  background: #fff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logout {
+  width: 24px;
+  height: 24px;
+}
+
+.cover {
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+.cover-subtitle {
+  margin-top: 40px;
+  margin-bottom: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+.cover-title {
+  max-width: 450px;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+
+.articles {
+  background-color: #F5F6F7;
+}
+
+.item__top {
+  border-radius: 16px 16px 0 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item__inner {
+  padding: 24px 15px 208px;
+  max-width: 352px;
+  display: flex;
+  justify-content: space-between;
+}
+.first {
+  background-image: url('./images/first.png');
+}
+.second {
+  background-image: url('./images/second.png');
+}
+.third {
+  background-image: url('./images/third.png');
+}
+
+.card-item {
+  padding: 0;
+  border-radius: 16px;
+  position: relative;
+  max-width: 400px;
+}
+
+.article-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item__label {
+  padding: 8px 12px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.item__delete {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.item__date {
+  color: #B6BCBF;
+}
+
+.item__title {
+  font-size: 26px;
+  line-height: 30px;
+}
+.item__text {
+  font-size: 16px;
+  line-height: 22px;
+}
+.item__source {
+  color: #B6BCBF;
+  text-transform: uppercase;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+}
+
+.footer__inner {
+  margin: 32px auto 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  color: #B6BCBF;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footer__link {
+  margin-right: 30px;
+}
+
+.menu-btn{
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+#menu-toggle{
+  display: none;
+}
+@media (max-width: 1270px) {
+  .item {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .item {
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .item {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 962px) {
+  .item {
+    max-width: 270px;
+  }
+}
+@media (max-width: 872px) {
+  .item {
+    max-width: 235px;
+  }
+}
+@media (max-width: 770px) {
+  .header {
+    height: 56px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .menu-btn {
+    visibility: visible;
+  }
+  .menu__item {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .articles__list{
+    justify-content: space-around;
+  }
+  .item {
+    max-width: 300px;
+  }
+  .footer__inner {
+    flex-direction: column-reverse;
+  }
+  .footer__link:first-child {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer__item:last-child {
+    display:inline-flex;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 652px) {
+  .item {
+    max-width: 260px;
+  }
+}
+@media (max-width: 570px) {
+  .articles__list{
+    max-width: 440px;
+    display: block;
+    margin: auto;
+  }
+  .item {
+    max-width: 400px;
+  }
+  .cover__text {
+    font-size: 30px;
+  }
+  .footer__link {
+    margin-right: 10px;
+  }
+}
